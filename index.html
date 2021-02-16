@@ -4,12 +4,19 @@
     <title>jQuery Research</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
-    $(document).ready(function(){
-    $("p").css("color", "red");
-    });
-    </script>
+  $(document).ready(function(){
+    $("p:last").addClass("selected");
+  });
+  </script>
+    <style>
+  p { margin: 8px; font-size:16px; }
+  .selected { color:red; }
+  .highlight { background:yellow; }
+  </style>
 </head>
 
 <body>
-    <p>段落タグのテキストをjQueryで赤にしています。</p>
+  <p>Hello</p>
+  <p>and</p>
+  <p>Goodbye</p>
 </body>
