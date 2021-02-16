@@ -4,19 +4,10 @@
     <title>jQuery Research</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
-  $(document).ready(function(){
-    $("p:last").addClass("selected");
-  });
+ $('p').after('<p>新しく追加した要素</p>');
   </script>
-    <style>
-  p { margin: 8px; font-size:16px; }
-  .selected { color:red; }
-  .highlight { background:yellow; }
-  </style>
 </head>
 
 <body>
   <p>Hello</p>
-  <p>and</p>
-  <p>Goodbye</p>
 </body>
