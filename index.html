@@ -5,19 +5,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
   $(document).ready(function(){
-    $("button").click(function () {
-      $("p").empty();
-    });
+    $("div").html("<span class='red'>Hello <b>Again</b></span>");
   });
   </script>
-  <style>
-  p { background:yellow; border: thin solid red;}
+   <style>
+  .red { color:red; }
   </style>
 </head>
 
 <body>
-  <p>
-    Hello, <span>Person</span> <a href="javascript:;">and person</a>
-  </p>
-  <button>Call empty() on above paragraph</button>
+  <span>Hello</span>
+
+  <div>Hello?</div>
+  <div></div>
+  <div></div>
 </body>
