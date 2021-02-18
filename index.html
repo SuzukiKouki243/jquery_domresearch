@@ -3,19 +3,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery Research</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+  $(document).ready(function(){
+    $("<b>Paragraph. </b>").replaceAll("p"); // check replaceWith() examples
+  });
+  </script>
 </head>
 
 <body>
-  <img id="logo" />
-<script>
-$(function() {
-  $('#logo').attr('src', 'http://www.wings.msn.to/image/wings.jpg');
-});
-    $('#logo').attr({
-  'src': 'http://www.wings.msn.to/image/wings.jpg',
-  'title': 'WINGSプロジェクト'
-});
-    $('#logo').removeAttr('title');
-
-</script>
+  <p>Hello</p>
+  <p>cruel</p>
+  <p>World</p>
 </body>
